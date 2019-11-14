@@ -1,4 +1,4 @@
-package hellojava;
+
 
 import java.util.Scanner;
 import java.lang.*;
