@@ -33,7 +33,7 @@ public class MaximumProduct {
 			{
 			if(res==arr[k])
 			{
-				System.out.println("The result is"+res);
+				System.out.println("The result is "+res);
 				flag=1;
 				break;
 			}
