@@ -11,8 +11,7 @@ public class ArithmeticException {
 		{
 			System.out.println("Add");
 			flag=1;
-		}
-		
+		}	
 		if(a-b==c)
 		{
 			System.out.println("Subtract");
