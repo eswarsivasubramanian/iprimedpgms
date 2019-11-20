@@ -13,10 +13,10 @@ public class EncapStudent {
 		this.city = city;
 	}
 
-	EncapStudent()
+	/*EncapStudent()
 	{
 		System.out.println("constructor for student");
-	}
+	}*/
 
 	public int getRollno() {
 		return rollno;
