@@ -1,29 +1,30 @@
 package hellojava;
-class Instance
-{
-	int number;
-	int getNumber(int num)
-	{
-		System.out.println("In instance method");
-		number=num;
-		return number;
-	}	
-}
-public class Name
-{
-	static String s="";
-	public static void getName(String name)
-	{
-		System.out.println("In static method");
-		s=name;
-		System.out.println(s);
-	}
-public static void main(String[] args) {
-		// TODO Auto-generated method stub
-	Instance ins=new Instance();
-	System.out.println(ins.getNumber(100));	
-	Name.getName("Eswar");
-	}
-}
+import java.util.Scanner;
+import java.text.NumberFormat;
+import java.util.Locale;
 
+public class Name {
+    
+    public static void main(String[] args) {
+        /* Read input */
+        Scanner scanner = new Scanner(System.in);
+        double payment = scanner.nextDouble();
+        scanner.close();
 
+        /* Create custom Locale for India. 
+          I used the "IANA Language Subtag Registry" to find India's country code */
+        Locale indiaLocale = new Locale("en", "IN");
+
+        /* Create NumberFormats using Locales */
+        NumberFormat us     = NumberFormat.getCurrencyInstance(Locale.US);
+        NumberFormat india  = NumberFormat.getCurrencyInstance(indiaLocale);
+        NumberFormat china  = NumberFormat.getCurrencyInstance(Locale.CHINA);
+        NumberFormat france = NumberFormat.getCurrencyInstance(Locale.FRANCE);
+
+        /* Print output */        
+        System.out.println("US: "     + us.format(payment));
+        System.out.println("India: "  + india.format(payment));
+        System.out.println("China: "  + china.format(payment));
+        System.out.println("France: " + france.format(payment));
+    }
+}
