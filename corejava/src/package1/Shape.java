@@ -11,5 +11,6 @@ public abstract class Shape {
 	{
 		System.out.println("inside m1 method");
 	}
-
+/*  concrete class -  class in which all methods are defined
+    cannot override final method in child class   */
 }
