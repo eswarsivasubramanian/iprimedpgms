@@ -8,6 +8,8 @@ public class Test {
 		System.out.println("Name: "+e1.getName());
 		System.out.println("Roll No: "+e1.getRollno());
 		System.out.println("City: "+e1.getCity());
+		e1.setCity("Bihar");//used to call in another class
+		System.out.println("City: "+e1.getCity());
 	}
 
 }
