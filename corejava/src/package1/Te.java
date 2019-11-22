@@ -1,7 +1,5 @@
 package package1;
-
 public class Te {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//System.out.println(ArithmeticException.div(10,5));
@@ -12,10 +10,9 @@ public class Te {
 			AE.div(20,4);
 			int[] i=new int[] {1,2,3};
 			System.out.println(i[1]);//wont be executed if exception occurs before and control transfers to catch block
-			String str=null;
+			String str="Hello World";
 			System.out.println(str.charAt(4));
 		}
-		
 		catch(ArithmeticException e)
 		{
 			System.out.println("y value should be greater than zero");
@@ -30,8 +27,10 @@ public class Te {
 		{
 			e.printStackTrace();
 		}
-		System.out.println("try catch completed");
-
+		finally
+		{
+		System.out.println("finally block");
+	    }
+		System.out.println("after try catch block");
 	}
-
 }
