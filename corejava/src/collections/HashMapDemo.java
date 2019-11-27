@@ -7,13 +7,14 @@ public class HashMapDemo {
 		HashMap<Integer,String> hm = new HashMap<Integer,String>();
 		hm.put(1, "India");
 		hm.put(2, "Srilanka");
+		hm.put(4, "SouthAfrica");
 		System.out.println(hm);
 		
 		//duplicate values allowed
 		hm.put(3, "India");
 		System.out.println(hm);
 		
-		//duplicate keys not allowed but values will interchange 
+		//duplicate keys are not allowed but values will interchange 
 		hm.put(2, "Australia");
 		hm.put(3, "England");
 		System.out.println(hm);
@@ -32,11 +33,5 @@ public class HashMapDemo {
 		{
 			System.out.println(i.getKey() + ": "+i.getValue());
 		}
-		
-		
-		
-		
-
 	}
-
 }
