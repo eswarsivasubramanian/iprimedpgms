@@ -1,10 +1,9 @@
 package collections;
 import java.util.*;
-
 public class LinkedHashMapDemo {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		//linked hashmap
 		LinkedHashMap<String,Integer> lhm = new LinkedHashMap<String,Integer>();
 		lhm.put("Chennai",600091);
@@ -19,8 +18,5 @@ public class LinkedHashMapDemo {
 				{
 					System.out.println(i.getKey() + ": "+i.getValue());
 				}
-		
-
 	}
-
 }
