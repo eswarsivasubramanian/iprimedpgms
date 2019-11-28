@@ -13,14 +13,16 @@ public class ComparatorDemo implements Comparator {
 		// TODO Auto-generated method stub
 		String i1 = (String)arg0;
 		String i2 = (String)arg1;
-		/*if(i1.compareTo(i2))
-			i1.
+		
+		//for integers
+		/*if(i1 < i2)
 			return 1;
 		else if(i1 > i2)
 			return -1;
 		else
 			return 0;
 		*/
+		
 		return(i2.compareTo(i1));
 	}
 }
