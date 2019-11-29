@@ -10,6 +10,7 @@ public class HashMapDemo {
 		hm.put(4, "SouthAfrica");
 		System.out.println(hm);
 		
+		
 		//duplicate values allowed
 		hm.put(3, "India");
 		System.out.println(hm);

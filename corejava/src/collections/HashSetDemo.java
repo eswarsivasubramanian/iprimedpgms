@@ -10,6 +10,7 @@ public class HashSetDemo {
 		hs.add("Siva");
 		hs.add("Mani");
 		hs.add("Eswar");
+		System.out.println(hs);
 		
 		//No insertion order and no duplicates
 		

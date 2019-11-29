@@ -7,7 +7,7 @@ public class Display {
 		for(int i=1;i<=10;i++)
 		{
 		System.out.println("Hello "+ s);
-		Thread.sleep(10);
+		//Thread.sleep(10);
 		}
 	}
 	

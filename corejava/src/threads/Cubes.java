@@ -5,10 +5,10 @@ public class Cubes extends Thread  {
 	{
 		for(int i=1;i<=10;i++)
 		{
-			Thread.currentThread().setName("cube thread");
-			System.out.println(Thread.currentThread().getName());  // thread number is 0
+			//Thread.currentThread().setName("cube thread");
+			//System.out.println(Thread.currentThread().getName());  // thread number is 0
 			System.out.println("cube of "+i+" is : "+i*i*i);
-			Thread.sleep(10);
+			//Thread.sleep(10);
 		}
 	}
 
